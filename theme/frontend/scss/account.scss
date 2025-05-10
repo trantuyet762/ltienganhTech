@@ -1,0 +1,461 @@
+@import "function";
+
+.sidebar-account {
+    border: 1px solid #fcaf17;
+    border-radius: 10px;
+    padding: cal(40rem);
+    height: 100%;
+
+    .info-customer {
+        gap: cal(16rem);
+        margin-bottom: cal(36rem);
+
+        .avatar {
+            width: cal(100rem);
+            height: cal(100rem);
+            border-radius: 100%;
+            flex-shrink: 0;
+            position: relative;
+            overflow: hidden;
+            padding: cal(10rem);
+
+            &::after {
+                content: "";
+                width: cal(14rem);
+                height: cal(14rem);
+                border-radius: 100%;
+                background: #05e500;
+                position: absolute;
+                top: 12px;
+                right: 17px;
+                z-index: 1;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .ct-text {
+            flex: 1;
+        }
+    }
+
+    .become-vip {
+        padding: cal(25rem) 0;
+        border-top: 1px solid #fcaf17;
+        border-bottom: 1px solid #fcaf17;
+        margin-bottom: cal(40rem);
+
+        .button {
+            gap: cal(24rem);
+            justify-content: center;
+
+            .btn {
+                min-width: cal(171rem);
+            }
+        }
+    }
+}
+
+.sidebar-account__item {
+    padding: cal(12rem);
+    border-radius: 61px;
+    gap: cal(16rem);
+
+    img {
+        width: cal(100rem);
+        height: cal(100rem);
+        flex-shrink: 0;
+        border-radius: 100%;
+    }
+
+    .ct-text {
+        flex: 1;
+    }
+}
+
+.nav-link__account {
+    justify-content: center;
+    gap: cal(30rem);
+
+    li {
+        a {
+            display: block;
+            min-width: cal(208rem);
+            font-size: cal(18rem);
+            font-family: "Quicksand_Bold";
+            color: #fcaf17;
+            padding: cal(10rem) cal(20rem);
+            border-radius: 10px 10px 0px 0px;
+            background: #ffffff;
+            border: 1px solid #fcaf17;
+            text-align: center;
+            transition: 0.3s;
+            border-bottom: none;
+
+            &.active,
+            &:hover {
+                background: #fcaf17;
+                color: #fff;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.nav-content__account {
+    border: 1px solid #fcaf17;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: cal(40rem);
+    height: calc(100% - 44px);
+
+    .btn-gray__light {
+        color: #a0aec0;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            background: #fcaf17;
+        }
+    }
+
+    .form-button-action {
+        gap: cal(24rem);
+    }
+}
+
+.form-change__password {
+    margin-bottom: cal(100rem);
+    max-width: cal(620rem);
+    margin-left: auto;
+    margin-right: auto;
+
+    .form-control {
+        background: #ffffff;
+        border: 1px solid #ebebeb;
+        box-sizing: border-box;
+        border-radius: 55px;
+        height: cal(40rem);
+        color: #888;
+
+        &::placeholder {
+            color: #888;
+        }
+    }
+}
+
+.wrapper-table {
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    margin-bottom: cal(100rem);
+}
+
+.table-account {
+    margin-bottom: 0;
+
+    td {
+        padding: cal(17rem);
+        text-align: center;
+
+        &:not(:last-child) {
+            border-right: 1px solid #ebebeb;
+        }
+    }
+
+    tbody {
+        tr {
+            border-top: 1px solid #ebebeb;
+        }
+    }
+}
+
+.wrapper-nav__profile {
+    border-radius: 88px;
+    background: rgba(160, 174, 192, 0.3);
+    overflow-x: auto;
+}
+
+.nav-school-profile {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
+    .nav-item {
+        .nav-link {
+            border-radius: 88px;
+            font-family: "Quicksand_Bold";
+            color: #a0aec0;
+            padding: cal(13rem);
+            transition: 0.3s;
+
+            &.active,
+            &:hover {
+                background: #fcaf17;
+                color: #fff;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.table-school-profile {
+    td {
+        vertical-align: middle;
+        padding: cal(30rem) cal(10rem);
+
+        &:not(:last-child) {
+            border-right: 1px solid #e2e8f0;
+        }
+    }
+
+    .detail-subject {
+        width: 55%;
+    }
+
+    tbody {
+        tr {
+            border-top: 1px solid #e2e8f0;
+        }
+    }
+
+    .point-total {
+        display: flex;
+        width: cal(80rem);
+        height: cal(80rem);
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        background: #0096f3;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .evaluate {
+        gap: cal(40rem);
+    }
+}
+
+.detail-subject__content {
+    gap: cal(30rem);
+    align-items: center;
+
+    .subject {
+        gap: cal(12rem);
+
+        .icon {
+            flex-shrink: 0;
+
+            img {
+                width: cal(100rem);
+                height: cal(100rem);
+            }
+        }
+
+        .progress {
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            background: #fff;
+            height: cal(8rem);
+            margin-right: cal(10rem);
+
+            .progress-bar {
+                background: #fcaf17;
+            }
+        }
+    }
+
+    .point {
+        flex: 1;
+
+        .point-detail {
+            &:not(:last-child) {
+                margin-bottom: cal(10rem);
+            }
+
+            .text {
+                gap: cal(8rem);
+                align-items: center;
+
+                .star {
+                    color: #fcaf17;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.prgress-statis {
+    width: cal(168rem);
+    height: cal(168rem);
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/bg-statis.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .total {
+        padding-top: cal(4rem);
+        margin-top: cal(4rem);
+        border-top: 1px solid #e2e8f0;
+    }
+}
+
+.progress-statis-content {
+    ul {
+        gap: cal(8rem);
+        li {
+            background: #edf2f7;
+            border-radius: 22px;
+            padding: cal(6rem) cal(22rem);
+            margin-bottom: cal(10rem);
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            gap: cal(4rem);
+            .star {
+                color: #fcaf17;
+                font-size: cal(12rem);
+            }
+        }
+    }
+    .total-point {
+        strong {
+            color: #fcaf17;
+        }
+    }
+}
+.module-table-point {
+    margin-top: cal(40rem);
+    padding-top: cal(15rem);
+    border-top: 1px solid #e2e8f0;
+    .select {
+        min-width: cal(207rem);
+        min-height: cal(36rem);
+        border-radius: 10px;
+        color: #4a5568;
+        font-size: cal(14rem);
+    }
+}
+.table-point {
+    td {
+        vertical-align: middle;
+    }
+    thead {
+        background: #edf2f7;
+        td {
+            white-space: nowrap;
+        }
+    }
+    td {
+        padding: cal(13rem) cal(25rem);
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid #e2e8f0;
+        }
+    }
+}
+.wrapper-table-point{
+    overflow-x: auto;
+}
+@media (max-width: 1651px) {
+    .sidebar-account {
+        padding: cal(20rem);
+    }
+    .sidebar-account__item img {
+        width: cal(75rem);
+        height: cal(75rem);
+    }
+    .nav-link__account li a {
+        font-size: cal(16rem);
+    }
+    .nav-link__account {
+        gap: cal(10rem);
+    }
+    .nav-link__account li a {
+        min-width: cal(180rem);
+    }
+    .detail-subject__content .subject .icon img{
+        width: cal(50rem);
+        height: cal(50rem);
+        object-fit: scale-down;
+    }
+    .detail-subject__content{
+        gap: cal(10rem);
+    }
+    .table-school-profile .point-total{
+        width: cal(50rem);
+        height: cal(50rem);
+    }
+    .prgress-statis{
+        width: cal(140rem);
+        height: cal(140rem);
+    }
+}
+@media(max-width:1199px){
+    .table-account td{
+        white-space: nowrap;
+    }
+    .wrapper-table{
+        overflow-x: auto;
+    }
+}
+@media (max-width: 991px) {
+    .sidebar-account {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: cal(350rem);
+        height: 100%;
+        z-index: 100;
+        background: #fff;
+        border-radius: 0;
+        border: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+        &.show {
+            left: 0;
+            transition: 0.3s;
+        }
+    }
+    .wrapper-table{
+        margin-bottom: cal(30rem);
+    }
+}
+@media (max-width: 767px) {
+    .nav-link__account li a {
+        padding: 0;
+        border: none;
+        background: none;
+        min-width: unset;
+        border-radius: 0;
+        &.active {
+            background: none;
+            color: #fcaf17;
+            text-decoration: underline !important;
+        }
+     
+    }
+    .nav-link__account{
+        margin-bottom: cal(20rem);
+    }
+    .nav-content__account{
+        height: auto;
+        padding: cal(20rem);
+    }
+    .form-change__password{
+        margin-bottom: cal(30rem);
+    }
+}
+@media(max-width:575px){
+    .nav-content__account .form-button-action{
+        gap: cal(10rem);
+    }
+}

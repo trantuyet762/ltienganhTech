@@ -1,0 +1,14 @@
+{
+  "name": "luyentienganh-html",
+  "version": "1.0.0",
+  "main": "script-new.js",
+  "scripts": {
+    "build:css": "tailwindcss -i input.css -o theme/frontend/css/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

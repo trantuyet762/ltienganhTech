@@ -1,0 +1,65 @@
+object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, 
+ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+b,strong, th{font-weight: bold;}
+i, em{font-style: italic;}
+sub, sup{font-size: 75%;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';content:none;}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;}
+del{text-decoration: line-through;}
+abbr[title], dfn[title]{border-bottom:1px dotted;cursor:help;}
+table{border-collapse:collapse;border-spacing:0;}
+hr{display: block; height: 1px; border: 0;border-top:1px solid #cccccc;margin: 20px 0;padding: 0;}
+input, select {vertical-align:middle;}
+
+a,a:hover,a:focus,a:active{text-decoration:none;color:inherit;outline:none}
+ol,ul,li{padding:0;list-style:none;margin:0}
+label{font-weight:normal}
+input[type="text"],input[type="email"],input[type="password"]{padding-left:12px;padding-right:12px}
+select{padding-left:8px}
+input[type="number"]{padding-left:5px}
+textarea{padding:8px 12px 5px 12px}
+input,textarea,select,button,a{outline:none}
+button{border:none;background:none;padding:0}
+*{padding-left:constant(safe-area-inset-left);padding-right:constant(safe-area-inset-right);padding-bottom:constant(safe-area-inset-bottom);padding-top:constant(safe-area-inset-top)}
+
+@import "var";
+
+img{
+	max-width: 100%;
+	vertical-align: middle;
+	@include object_fit(cover);
+}
+.smooth{@include smooth(.2s);}
+.col-mar-0{@include mar(0px)}
+.col-mar-0 > div[class^="col-"]{@include pad(0px);}
+.col-mar-5{@include mar(-5px)}
+.col-mar-5 > div[class^="col-"]{@include pad(5px);}
+.col-mar-8{@include mar(-8px)}
+.col-mar-8 > div[class^="col-"]{@include pad(8px);}
+.col-mar-10{@include mar(-10px)}
+.col-mar-10 > div[class^="col-"]{@include pad(10px);}
+
+.relative{position: relative;}
+.static{position: static;}
+.absolute{position: absolute;}
+
+
+
+

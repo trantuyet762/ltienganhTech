@@ -1,0 +1,107 @@
+@import "function";
+
+.header-admin {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(77, 77, 77, 0.08);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: cal(6rem) 0;
+
+    .logo-admin {
+        max-width: cal(100rem);
+    }
+
+    .header-admin__right {
+        gap: cal(25rem);
+
+        .item {
+            img {
+                margin-right: cal(8rem);
+            }
+        }
+
+        .auth-admin {
+            .avatar {
+                display: block;
+                width: cal(33rem);
+                height: cal(33rem);
+                border-radius: 100%;
+                overflow: hidden;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    object-fit: cover;
+                    z-index: inherit;
+                    margin-right: 0;
+                }
+            }
+
+            .name {
+                margin-left: cal(8rem);
+                margin-right: cal(4rem);
+            }
+        }
+    }
+}
+
+.main-admin {
+    height: calc(100vh - 48px);
+
+    .nav-sidebar__admin {
+        width: cal(220rem);
+        flex-shrink: 0;
+        height: 100%;
+        background: #182537;
+        overflow-y: auto;
+
+    }
+}
+
+.nav-sidebar__item {
+    li {
+        position: relative;
+        padding: cal(10rem) cal(10rem) cal(10rem) cal(43rem);
+
+        img {
+            width: cal(17rem);
+            height: cal(17rem);
+            object-fit: scale-down;
+            position: absolute;
+            top: cal(16rem);
+            left: cal(7rem);
+            z-index: inherit;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            padding: cal(7rem);
+            font-size: cal(14rem);
+            color: #D2E6F2;
+
+            img {
+                width: cal(16rem);
+                height: cal(16rem);
+                object-fit: scale-down;
+                margin-right: cal(20rem);
+            }
+        }
+
+        ul {
+            li {
+                padding: cal(7rem) 0;
+            }
+        }
+    }
+}
+.main-admin__content{
+    height: 100%;
+    overflow-y: auto;
+    flex: 1;
+}
